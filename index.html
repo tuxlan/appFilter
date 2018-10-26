@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App Filter</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <section class="photos_container">
+      <div class="photos"></div>
+    </section>
+    <section class="upload_container">
+      <div class="drop">
+        Drag and drop image here...
+        <canvas width="650" height="400"></canvas>
+        <button id="savePhoto" class="save"></button>
+      </div>
+      <div class="filters">
+        <ul>
+          <li class="normal"></li>
+          <li class="gray"></li>
+          <li class="sepia"></li>
+          <li class="blur"></li>
+          <li class="invert"></li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <button id="takePhoto"></button>
+      <button id="showPhotos"></button>
+    </footer>
+  </div>
+</body>
+<script src="js/pageSwitcher.js"></script>
+<script src="js/showPhotos.js"></script>
+<script src="js/uploadPhoto.js"></script>
+</html>
