@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 80%;
+  position: relative;
+  display: inline-block;
+  height: 1200px;
+  margin: 0 10%;
+  background: #f8f8f8;
+  overflow-y: auto;
+}
+
+/*******************
+* Photos page section *
+*******************/
+.photos_container {
+  display: inline;
+  margin: 1% auto;
+}
+
+.photos {
+  margin: 2% 0;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.photo {
+  width: 30%;
+  height: auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.photo > img {
+  width: 100%;
+}
+
+.photo > date {
+  color: #333;
+}
+
+/**********************
+* Upload page section *
+**********************/
+.upload_container {
+  display: none;
+}
+
+.drop {
+  position: relative;
+  display: block;
+  width: 650px;
+  height: auto;
+  border: 1px solid rgba(63,63,63,0.4);
+  border-radius: 5px;
+  margin: 1% auto;
+  text-align: center;
+}
+
+.save {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  background: none;
+  background-image: url('../img/save.png');
+  background-size: cover;
+  margin: 0 auto;
+  border: none;
+}
+
+.filters {
+  width: 90%;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+  margin: 2% 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+li {
+  background-image: url('../img/foxy.png');
+  background-size: cover;
+  padding: 5px;
+  width: 15%;
+  height: 130px;
+  margin-top: 5px;
+  border-radius: 2%;
+}
+
+.gray {
+  filter: grayscale(100%);
+}
+
+.sepia {
+  filter: sepia(100%);
+}
+
+.blur {
+  filter: blur(1px);
+}
+
+.invert {
+  filter: invert(100%);
+}
+/*****************
+* Footer section *
+*****************/
+footer {
+  display: inline;
+  position: fixed;
+  width: 80%;
+  bottom: 0%;
+  margin: auto;
+  background: rgba(208,32,31,0.8);
+  padding: 2px 0;
+}
+
+#takePhoto {
+  position: relative;
+  display: block;
+  width: 52px;
+  height: 52px;
+  background: none;
+  background-image: url('../img/camera.png');
+  border: none;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+#showPhotos {
+  position: relative;
+  display: none;
+  width: 52px;
+  height: 52px;
+  background: none;
+  background-image: url('../img/foxy.png');
+  background-size: cover;
+  border: 2px solid #8cfbbb;
+  border-radius: 50%;
+  margin: 0 auto;
+}
